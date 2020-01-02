@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stack Overflow AI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Portfolio</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Stack Overflow AI</h1>
+							<p>This project was done along with Machine Learning Club and an independent study at UW-Platteville. This project used a machine learning model called a Transformer to generate Stack Overflow answers. This model is originally used by Google to translate languages, in this case the model translates questions into answers. What makes this model work so well is the use of self-attention with masked output to input. Self-attention is a machine learning technique introduced in 2017 used to associate context with sequenced data, also self-attention is becoming the new standard for creating machine learning models for sequential data.</p>
+							<p>To achieve this python was used with TensorFlow to create a Transformer model. Keras was used along with TensorFlow to create some of the Transformer layers. To get a training dataset Google Big Query was used for getting Stack Overflow questions and answers. TensorFlow Datasets was used to tokenize the data and creating datasets for training.</p>
+							<p>A more detailed report can be found <a href="documents/IndependentStudy-FinalReport.pdf">here</a>.</p>
+							<p>All source code can be found <a href="https://github.com/uwp-mlc/stack-overflow-answer-generator">here</a>.</p>
+							
+							
+							<h2>Example</h2>
+							<h3>Question</h3>
+							<p>I have a list of datasets.</p>
+
+<pre><code>dfList &lt;- list(df1,df2,df3)
+</code></pre>
+
+<p>Each dataset looks like this.</p>
+
+<pre><code>apples, oranges
+1,      2
+NA,     4
+</code></pre>
+
+<p>I want to programatically change each dataframe's <code>NA</code>s to <code>0</code>s. How do I do this?</p>
+
+<p>My code so far...</p>
+
+<pre><code>lapply(
+  X = dfList,
+  FUN = cbind,
+  is.na = FALSE
+)
+</code></pre>
+							<h3>Predicted Answer</h3>
+							<p>You can use <code>dplyr</code> to get the index of the element in the list:</p> 
+  
+							<pre><code>df$list &lt;- data.frame(x=1:10) 
+df$list &lt;- data.frame(x=1:10) 
+df$list &lt;- data.frame(x=1:10) 
+df$list &lt;- data.frame(x=1:10) 
+df$list &lt;- data.frame(x=x,y=10) 
+df$list &lt;- data.frame(x=x,y=x=y,y=y=y) 
+df$list[x=x:10] 
+							</code></pre>
+							
+							
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="https://github.com/garrettluskey" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
