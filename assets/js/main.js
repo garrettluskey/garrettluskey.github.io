@@ -181,8 +181,5 @@
 						$menu._hide();
 
 			});
-		
-			var $menu = $('#menu');
-
 
 })(jQuery);
